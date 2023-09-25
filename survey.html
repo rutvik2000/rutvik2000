@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Onsite Survey</title>
+</head>
+<body>
+    <div class="survey-container">
+        <div class="boy-image">
+            <!-- Include your boy image here -->
+        </div>
+        <div class="company-logo">
+            <!-- Include your company logo here -->
+        </div>
+        <div class="survey-form">
+            <h1>Get A FREE</h1>
+            <h2>Consultation with an Expert</h2>
+            <form id="survey-form">
+                <div class="input-container">
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-container">
+                    <label for="mobile-number">Enter your phone number:</label>
+                    <div class="input-group">
+                        <select id="country-code">
+                            <option value="1">+1 (USA)</option>
+                            <option value="91" selected>+91 (India)</option>
+                            <!-- Add more country codes as needed -->
+                        </select>
+                        <input type="tel" id="mobile-number" pattern="[0-9]{10}" required>
+                    </div>
+                </div>
+                <button type="button" id="talk-to-us">Talk To Us</button>
+            </form>
+        </div>
+        <div class="thank-you-message" id="page-2">
+            <!-- The thank you message will be displayed here -->
+            <p>Thanks a ton for taking out your precious time and for completing the survey</p>
+            <p><span id="thank-you-email"></span></p>
+            <p><span id="thank-you-phone"></span></p>
+        </div>              
+    </div>
+    <script src="survey.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

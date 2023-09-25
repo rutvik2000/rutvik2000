@@ -1,0 +1,101 @@
+/* Reset some default styles */
+html, body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the whole page */
+body {
+    background-color: #fff; /* You can change the background color as needed */
+    font-family: Arial, sans-serif; /* Use your preferred font */
+}
+
+/* Center the survey container */
+.survey-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    border-radius: 10px; /* Add rounded corners */
+    margin-top: 20px; /* Add some space at the top */
+}
+
+/* Style the boy image */
+.boy-image {
+    background-image: url('boy.png'); /* Replace 'boy.png' with your boy image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 75%; /* This sets the aspect ratio for the rectangle (4:3) */
+    margin-bottom: 20px; /* Add space between the image and form */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* Style the company logo */
+.company-logo {
+    background-image: url('webengage-logo.png'); /* Replace 'webengage-logo.png' with your logo image file */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin-bottom: 20px; /* Add space between the logo and form */
+}
+
+.country-code-container {
+    width: 25%; /* Adjust the width as needed */
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px; /* Add spacing between the country code and phone number */
+}
+
+/* Style the survey form */
+.survey-form {
+    text-align: center;
+}
+
+.input-container {
+    margin: 10px 0;
+}
+
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button#talk-to-us {
+    background-color: grey;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the thank you message */
+.thank-you-message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the thank you message text */
+.thank-you-message p {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add space between paragraphs */
+}
+
+/* Style for the email and phone display */
+#thank-you-email,
+#thank-you-phone {
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Change the text color as needed */
+}
+
